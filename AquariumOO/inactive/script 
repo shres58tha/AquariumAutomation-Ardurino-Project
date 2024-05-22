@@ -1,0 +1,6 @@
+or i in $(ls -1 *.h); 
+do
+         FILE="${i%:}"                                           # Strip 
+         echo "#include" $FILE >>Bundled.h                       # Your command
+done
+
